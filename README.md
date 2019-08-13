@@ -1,7 +1,7 @@
 Installation
 ====
 
-The project serves as a coding exercise illustrating a web service getting information from /etc/passwd and /etc/group files in a couple of different ways. It was implemented as a Java servlet application, which can be run in any J2EE container with Java 8, and installation can be done by simply dropping the WAR file into the webapps directory.
+Implemented as a Java servlet, the application can be run in any J2EE container with Java 8. Installation can be done by simply dropping the WAR file into the webapps directory.
 
 Configuration
 ====
@@ -12,7 +12,7 @@ Configuration is done by modifying web.xml
 
  • group_path: file path for group file. Default /etc/group
 
- • refresh_time: interval for file refreshes. Default 1 second
+ • refresh_time: interval between file refreshes. Default 1 second
  
 Unit-tests
 ====
