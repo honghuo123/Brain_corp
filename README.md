@@ -1,8 +1,10 @@
 Installation
 ====
+
 The project serves as a coding exercise illustrating a web service getting information from /etc/passwd and /etc/group files in a couple of different ways. It was implemented as a Java servlet application, which can be run in any J2EE container with Java 8, and installation can be done by simply dropping the WAR file into the webapps directory.
 Configuration
 ====
+
 Configuration is done by modifying web.xml
 
  • passwd_path: file path for passwd file. Default /etc/passwd
