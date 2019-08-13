@@ -33,3 +33,5 @@ Further enhancements can be made in the following areas, once business needs can
 • Multi-thread performance. Current implementation allows as many concurrent HTTP threads to be run, and separate read/write locking mechanism allows optimal performance. Further tuning, however, can still be done using load testers like JMeter.
 
 • System stability. Current code was put under 24-hour continues load, no memory leak was found. For real-life use, more rigorous test conditions need to be applied
+
+• Unit-tests. More negative test-cases could be added. (I did cover some in my scripts, but for cleanness I didn't include all)
