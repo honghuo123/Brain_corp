@@ -17,7 +17,7 @@ Configuration is done by modifying web.xml
 Unit-tests
 ====
 
-Unit-tests were done by shell scripts corresponding directly to the use cases, since methods have 1:1 mapping. More complex cases I would use JUnit test with Maven.
+Unit-tests were done by shell scripts corresponding directly to the use cases, since methods have 1:1 mapping, and scripts covers end-to-end as well. For more complex cases I would use JUnit.
 
 Future considerations
 ====
