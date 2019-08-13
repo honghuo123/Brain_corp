@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Brain_corp</display-name>
+  
+  	<context-param>
+		<param-name>passwd_path</param-name>
+		<param-value>/etc/passwd</param-value>
+	</context-param>
+	<context-param>
+		<param-name>group_path</param-name>
+		<param-value>/etc/group</param-value>
+	</context-param>
+	<context-param>
+		<param-name>refresh_time</param-name>
+		<param-value>1</param-value>
+	</context-param>
+  
+  	<servlet>
+		<servlet-name>PasswordAsService</servlet-name>
+		<servlet-class>com.bc.PasswordAsService</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PasswordAsService</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
